@@ -1,0 +1,43 @@
+.project-details-page {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .project-details-page h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .project-details-page ul {
+    padding-left: 20px;
+  }
+  
+  .media-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .media-img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .media-video {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1rem;
+    border-radius: 8px;
+  }
+  
+  .back-btn {
+    background: #eee;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+   

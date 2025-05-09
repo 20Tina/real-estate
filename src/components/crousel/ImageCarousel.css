@@ -1,0 +1,38 @@
+.hero-carousel {
+  position: relative;
+  width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  position: relative;
+}
+
+.carousel-slide img {
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: #fff;
+  z-index: 2;
+  text-align: left;
+}
+
+.carousel-overlay h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-overlay p {
+  font-size: 1.25rem;
+  font-weight: 400;
+}

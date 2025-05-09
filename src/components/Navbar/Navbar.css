@@ -1,0 +1,205 @@
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color:#8F87F1;
+    color: white;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  
+  .navbar-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .navbar-whatsapp {
+    margin-left: 1rem;
+  }
+  
+  .navbar-toggle {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+    }
+    .navbar-toggle {
+      display: block;
+      cursor: pointer;
+    }
+  }
+   */
+
+/* Navbar Styles */
+.navbar {
+  /* background-color: #3A59D1; */
+  background: linear-gradient(90deg, #3A59D1 0%, #8F87F1 50%, #6C63FF 100%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+/* Left Nav */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  background-color: white;
+  color: black;
+  padding: 0.5rem 0;
+  margin: 0;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  min-width: 180px;
+  z-index: 10;
+  list-style: none; /* Remove bullets */
+}
+
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+  list-style-type: none;  /* 👈 double sure no bullets */
+}
+
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-menu a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Center Logo */
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+.nav-logo img {
+  width: 120px; /* Adjust size as needed */
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* Right Icons */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8rem; /* 👈 Smaller icon size */
+  color: white;
+}
+/* Add this to hide the button appearance */
+.dropdown-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Optional: Hide icon if you only want text to be visible */
+.dropdown-toggle svg {
+  display: none; /* or visibility: hidden; */
+}
+
+/* Smooth dropdown animation */
+.dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu,
+.dropdown-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background-color: #3A59D1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-icons {
+    display: flex;
+  }
+
+  .nav-logo {
+    position: static;
+    transform: none;
+  }
+
+  .navbar.open .nav-links {
+    display: flex;
+  }
+}
+.dropdown-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown-icon {
+  transition: transform 0.3s ease;
+}
+
+.dropdown-toggle.open .dropdown-icon {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,435 @@
+
+  .banner {
+    position: relative;
+    height: 300px;
+    background: linear-gradient(rgba(0, 49, 55, 0.7), rgba(0, 49, 55, 0.7)),
+                url('C:\Users\valad\upcoming_project_front-end\bulding_project-app\src\assets\images\sale2.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+  }
+  
+  .banner h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  .property-detail-wrapper {
+    padding: 3rem 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .property-hero {
+    display: flex;
+   
+    gap: 2rem;
+    /* padding: 3rem 3rem 2rem 2rem; */
+   
+    align-items: stretch;
+    display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem;
+  justify-content: space-between;
+  align-items: stretch;
+    
+    
+  }
+  
+  .hero-left {
+    flex: 1 1 55%;
+    margin-left:17px;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 100%;
+  }
+  
+  .main-image {
+    width: 100%;
+    height: 38vh;
+    border-radius: 20px;
+    object-fit: cover;
+    
+  }
+  
+  .thumbnails {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+   
+
+  }
+  
+  .thumbnails img {
+    width: 21vh;
+    height: 15vh;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+   
+  }
+  
+  .thumbnails img:hover {
+    transform: scale(1.05);
+  }
+  
+  .hero-right {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 12px;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .hero-right h2 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-right .location {
+    color: #1c5f4a;
+    font-weight: 600;
+  }
+  
+  .description {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .info-icons {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Virtual Tour Box */
+.virtual-tour-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #eef6f1;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.virtual-tour-video {
+  width: 100%;
+  height: auto;
+  max-width: 380px;  /* Adjusted for better visibility */
+  border-radius: 10px;
+}
+
+.virtual-tour-box div {
+  max-width: 50%;
+}
+
+.virtual-tour-box h5 {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.virtual-tour-box p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.call-button {
+  background-color: #f6c443;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.call-button:hover {
+  background-color: #e5b92b;
+  transform: scale(1.05);
+}
+
+/* Property Overview Section */
+.overview-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.overview-content {
+  flex: 2;
+  min-width: 60%;
+}
+
+.posted-by-box {
+  flex: 1;
+  min-width: 280px;
+}
+
+.info-box {
+  background-color: #f4f9f6;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2rem;
+}
+
+.description-section, .amenities-section {
+  margin-top: 2rem;
+}
+
+.amenities-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.amenities-grid span {
+  background-color: #e9f0ec;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Agency Card Section */
+.agency-card {
+  background-color: #f4f9f6;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.agency-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+/* Feature Properties Section */
+.feature-properties-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: white;
+}
+
+.property-card-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.property-card {
+  width: 280px;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  overflow: hidden;
+  background: white;
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #f5c518;
+  color: black;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.card-content {
+  padding: 1rem;
+  text-align: left;
+}
+
+.card-content h3 {
+  margin: 0.5rem 0 0.3rem;
+  font-size: 1.1rem;
+}
+
+.card-content p {
+  margin: 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.card-content h4 {
+  color: #1f5f49;
+  margin: 0.8rem 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.cta-button-property {
+  margin-top: 2rem;
+}
+
+.cta-button-property button {
+  background: none;
+  border: 2px solid #1f2c5f;
+  color: #1f5f49;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button-property button:hover {
+  background: #5e78c8;
+  color: white;
+}
+
+.property-card {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 0.6s forwards;
+}
+
+.property-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.property-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.property-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* Keyframes for sliding effect */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animations for the overview section */
+.overview-wrapper {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 0.6s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animations for the hero section */
+.property-hero {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: heroSlideIn 0.8s forwards;
+}
+
+@keyframes heroSlideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animate the "Posted By" box */
+.posted-by-box {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards;
+  animation-delay: 1.4s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add any other animation styles you'd like */
+.property-card {
+  width: 280px;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  overflow: hidden;
+  background: white;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.property-card .image-wrapper img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.property-card-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}

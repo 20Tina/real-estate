@@ -1,0 +1,49 @@
+.services-banner-overlay {
+    position: relative;
+    background-image: url('C:\Users\valad\upcoming_project_front-end\bulding_project-app\src\assets\images\sale2.jpg'); /* make sure the path is correct */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .services-banner-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(40, 87, 75, 0.7); /* green transparent overlay */
+    z-index: 1;
+  }
+  
+  .banner-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    z-index: 2;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .contact-wrapper {
+    padding: 2rem;
+    background: #f5f7f6;
+  }
+  
+  .map-section {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .map-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .map-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  

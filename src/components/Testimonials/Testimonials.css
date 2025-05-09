@@ -1,0 +1,146 @@
+.testimonial-section {
+  background-color: #e6ede7;
+  padding: 80px 40px 80px;
+  height: 20rem;
+}
+.testimonial-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.testimonial-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.testimonial-left h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-left p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.learn-more-btn {
+  background: transparent;
+  border: 2px solid #1e3a2b;
+  color: #1e3a2b;
+  padding: 10px 80px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #1e3a2b;
+  color: #fff;
+}
+
+.testimonial-right {
+  flex: 1;
+  min-width: 300px;
+  margin-top: 60px; /* drop the whole slider lower */
+  
+}
+
+
+
+.stars {
+  margin: 0.5rem 0;
+}
+
+.testimonial-card p {
+  color: #444;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user-info strong {
+  display: block;
+  font-weight: 600;
+}
+
+.user-info span {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Optional: Custom dots */
+.slick-dots li button:before {
+  color: #000;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #d4af37;
+}
+.testimonial-section {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  background-color: #eaf0eb;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  padding: 0 20px;
+  
+}
+
+.testimonial-left {
+  flex: 1;
+}
+
+.testimonial-right {
+  flex: 1;
+  position: relative;
+  top: 10px; /* ← pushes it downward */
+  bottom: 120px;
+ 
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 60px 40px;
+  border-radius: 22px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+/* .testimonial-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  margin-top: 0; 
+  margin-top: -40px; /* this creates the 'overlap' effect */
+/* } */ 

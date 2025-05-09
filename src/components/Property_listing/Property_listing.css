@@ -1,0 +1,155 @@
+.services-banner-overlay {
+    position: relative;
+    background-image: url('C:\Users\valad\upcoming_project_front-end\bulding_project-app\src\assets\images\banner-2.png'); /* make sure the path is correct */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .services-banner-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(149, 144, 221, 0.8), rgba(89, 86, 191, 0.8));
+    backdrop-filter: blur(3px);
+    z-index: 1;
+  }
+  
+  .banner-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    z-index: 2;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  }
+  .featured-section {
+    padding: 2rem;
+    background: #f0f2f5; /* soft light grey */
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 3rem; /* Bigger */
+    font-weight: 500; /* Stronger */
+    color: #3A59D1; /* Match your primary blue */
+    margin-bottom: 2.5rem;
+    letter-spacing: 1px; /* Slightly wider */
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .section-title::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 4px;
+    background: linear-gradient(90deg, #3A59D1 0%, #8F87F1 50%, #6C63FF 100%);
+    left: 20%;
+    bottom: 0;
+    border-radius: 2px;
+  }
+  .property-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .property-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .property-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  .property-image {
+    position: relative;
+  }
+  
+  .property-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* orange to pink */
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  .property-details {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .property-details h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1e1e1e;
+  }
+  
+  .property-details p {
+    color: #6c757d;
+    font-size: 0.95rem;
+  }
+  .property-details h4 {
+    color: #28a745;
+    margin-bottom: 0.8rem;
+  }
+  
+  .property-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #555;
+  }
+  /* Search bar styles */
+.search-bar {
+  width: 300px;
+  padding: 0.6rem 1rem;
+  margin-bottom: 2rem;
+  border: 2px solid #3A59D1;
+  border-radius: 25px;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+.search-bar:focus {
+  box-shadow: 0 0 8px rgba(58, 89, 209, 0.6);
+}
+
+/* View Details button */
+.details-button {
+  margin-top: 1rem;
+  background: linear-gradient(to right, #3A59D1, #6C63FF);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+.details-button:hover {
+  background: linear-gradient(to right, #6C63FF, #3A59D1);
+  transform: translateY(-2px);
+}
