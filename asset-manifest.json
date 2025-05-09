@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/real-estate/static/css/main.15793f6d.css",
+    "main.js": "/real-estate/static/js/main.c13d88ae.js",
+    "static/js/453.6d4bbd80.chunk.js": "/real-estate/static/js/453.6d4bbd80.chunk.js",
+    "static/media/virtual_tour.mp4": "/real-estate/static/media/virtual_tour.041d7b2fec78c6329ba4.mp4",
+    "static/media/real3.jpg": "/real-estate/static/media/real3.ec25228df631272256d6.jpg",
+    "static/media/living4.jpg": "/real-estate/static/media/living4.cc2ff3038faf0281443a.jpg",
+    "static/media/banner-2.png": "/real-estate/static/media/banner-2.81d7bdb7a0901325d8d5.png",
+    "static/media/living3.jpg": "/real-estate/static/media/living3.073cb41c721d0c052184.jpg",
+    "static/media/livingroom.jpg": "/real-estate/static/media/livingroom.86ec7f10bda7a0be2bc5.jpg",
+    "static/media/real2.avif": "/real-estate/static/media/real2.e93989c8f28f9c423077.avif",
+    "static/media/faq.png": "/real-estate/static/media/faq.4172e26c4c7afae6f170.png",
+    "static/media/sale4.jpg": "/real-estate/static/media/sale4.1566e8cb6ba96a4281ae.jpg",
+    "static/media/real1.webp": "/real-estate/static/media/real1.d46f8ddc5675c43e2aeb.webp",
+    "static/media/about.avif": "/real-estate/static/media/about.c05576285317b1bc6c8d.avif",
+    "static/media/sale2.jpg": "/real-estate/static/media/sale2.4bee441fdb00a5f466f4.jpg",
+    "static/media/sale1.jpg": "/real-estate/static/media/sale1.97cc70da9c9887f43237.jpg",
+    "static/media/sale3.jpg": "/real-estate/static/media/sale3.b5dc9e38773150a1c661.jpg",
+    "static/media/slick.svg": "/real-estate/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/real-estate/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/real-estate/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/real-estate/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/real-estate/index.html",
+    "main.15793f6d.css.map": "/real-estate/static/css/main.15793f6d.css.map",
+    "main.c13d88ae.js.map": "/real-estate/static/js/main.c13d88ae.js.map",
+    "453.6d4bbd80.chunk.js.map": "/real-estate/static/js/453.6d4bbd80.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15793f6d.css",
+    "static/js/main.c13d88ae.js"
+  ]
+}
